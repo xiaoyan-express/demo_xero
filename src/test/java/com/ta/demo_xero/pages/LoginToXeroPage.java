@@ -1,14 +1,15 @@
 package com.ta.demo_xero.pages;
 
-import org.openqa.selenium.WebDriver;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class LoginToXeroPage {
+	private final static int TIMEOUT_IN_SECONDS = 40;
+
 	WebDriver driver;
 
 	By emailFieldElement = By.id("xl-form-email");
@@ -24,8 +25,8 @@ public class LoginToXeroPage {
 	public LoginToXeroPage(WebDriver driver) {
 		this.driver = driver;
 
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(TIMEOUT_IN_SECONDS, TimeUnit.SECONDS);
 	}
 
 	public void loginToWebSite(String username, String password) throws Exception {
