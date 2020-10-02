@@ -1,7 +1,11 @@
 # Compiled class file
 *.class
 
+# ignore java target files
 target/**
+
+# ignore test outputs
+test-output/**
 
 # Log file
 *.log
