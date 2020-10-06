@@ -54,7 +54,7 @@ public class XeroTest {
 		page.verifyLoginResult();
 	}
 
-	@Test
+	//@Test
 	public void xeroLoginPageTestFailed() throws Exception {
 		LoginToXeroPage page = new LoginToXeroPage(driver);
 		page.loginToWebSite("xyzxiaoyan@163.com", "wrong password");
