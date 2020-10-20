@@ -19,6 +19,21 @@ It is a design pattern, popularly used in test automation that creates Object Re
 # What is Page Factory?
 Page Factory in Selenium is an inbuilt Page Object Model concept for Selenium WebDriver but it is very optimized. It is used for initialization of Page objects or to instantiate the Page object itself. It is also used to initialize Page class elements without using "FindElement/s."
 
+# What is listener?
+Listener is defined as interface that modifies the default TestNG's behavior. As the name suggests Listeners "listen" to the event defined in the selenium script and behave accordingly. It is used in selenium by implementing Listeners Interface. It allows customizing TestNG reports or logs. There are many types of TestNG listeners available.
+    IAnnotationTransformer ,
+    IAnnotationTransformer2 ,
+    IConfigurable ,
+    IConfigurationListener ,
+    IExecutionListener,
+    IHookable ,
+    IInvokedMethodListener ,
+    IInvokedMethodListener2 ,
+    IMethodInterceptor ,
+    IReporter,
+    ISuiteListener,
+    ITestListener .
 
 # References:
  * [Page Object Model (POM) & Page Factory: Selenium WebDriver Tutorial](https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html)
+ * https://www.guru99.com/listeners-selenium-webdriver.html
