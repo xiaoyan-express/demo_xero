@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression2Suite">
+	<test name="loginToXeroWithWrongInfo">
+		<classes>
+			<class name="com.ta.demo_xero.loginToXeroWithWrongInfo">
+				<methods>
+					<exclude name="xeroLoginPageTestFailed"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="loginToXero">
+		<classes>
+			<class name="com.ta.demo_xero.loginToXero">
+				<methods>
+				    <exclude name="xeroLoginPageTest"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="loginWithTestData">
+		<classes>
+			<class name="com.ta.demo_xero.loginWithTestData">
+				<methods>
+					<include name="logingIntoBrowserTWithTestData"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
