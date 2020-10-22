@@ -38,3 +38,8 @@ Listener is defined as interface that modifies the default TestNG's behavior. As
 # References:
  * [Page Object Model (POM) & Page Factory: Selenium WebDriver Tutorial](https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html)
  * https://www.guru99.com/listeners-selenium-webdriver.html
+ 
+# How to run test case in command line?
+ * edit pom.xml file (add plugin)
+ * create suites folder and .xml file 
+ * $ mvn clean test -DsuiteXmlFile=sanity.xml 
